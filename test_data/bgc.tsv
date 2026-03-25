@@ -1,0 +1,10 @@
+sequence_id	start	end	type	strand
+scaffold_01	38047	44562	Polyketide	+
+scaffold_01	5093	11712	Polyketide	-
+scaffold_02	45262	50267	NRP	-
+scaffold_02	30098	38271	NRP	+
+scaffold_03	42159	46946	Terpene	+
+scaffold_03	43158	49943	RiPP	+
+scaffold_04	19620	24044	Terpene	-
+scaffold_05	4432	9294	Terpene	-
+scaffold_06	2000	8829	Polyketide	+
