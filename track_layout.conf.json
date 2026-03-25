@@ -1,0 +1,217 @@
+{
+  "outer_radius": 1.7,
+  "contig_label_radius": 1.292,
+  "tracks": [
+    {
+      "id": "splicing",
+      "type": "splicing",
+      "r0": 0.92,
+      "r1": 0.98,
+      "label": "Alternative splicing",
+      "label_style": "radial",
+      "label_angle_deg": 5,
+      "label_size": 10,
+      "label_offset": 0.15,
+      "label_color": "#f59e0b",
+      "empty_color": "#f1f5f9"
+    },
+    {
+      "id": "expression",
+      "type": "expression",
+      "r0": 0.8,
+      "r1": 0.92,
+      "label": "Expression",
+      "label_style": "radial",
+      "label_angle_deg": 15,
+      "label_size": 10,
+      "label_offset": 0.2,
+      "label_color": "#ef4444"
+    },
+    {
+      "id": "scaffolds",
+      "type": "scaffolds",
+      "r0": 0.74,
+      "r1": 0.78,
+      "label": "Scaffolds",
+      "label_style": "radial",
+      "label_angle_deg": 25,
+      "color": "#1e3a8a",
+      "label_size": 10,
+      "label_offset": 0.25,
+      "label_color": "#1e3a8a",
+      "fill_color": "none",
+      "edge_color": "#000000",
+      "edge_width": 1.2
+    },
+    {
+      "id": "gc",
+      "type": "gc_wave",
+      "r0": 0.66,
+      "r1": 0.72,
+      "label": "GC content",
+      "label_style": "radial",
+      "label_angle_deg": 35,
+      "label_size": 10,
+      "label_offset": 0.3,
+      "label_color": "#16a34a"
+    },
+    {
+      "id": "gene",
+      "type": "gene_wave",
+      "r0": 0.58,
+      "r1": 0.64,
+      "label": "Gene density",
+      "label_style": "radial",
+      "label_angle_deg": 45,
+      "label_size": 10,
+      "label_offset": 0.35,
+      "label_color": "#2563eb"
+    },
+    {
+      "id": "repeat",
+      "type": "repeat_wave",
+      "r0": 0.5,
+      "r1": 0.53,
+      "label": "Repeat density",
+      "label_style": "radial",
+      "label_angle_deg": 55,
+      "label_size": 10,
+      "label_offset": 0.4,
+      "label_color": "#f97316"
+    },
+    {
+      "id": "bgc",
+      "type": "bgc",
+      "r0": 0.42,
+      "r1": 0.46,
+      "label": "BGC",
+      "label_style": "radial",
+      "label_angle_deg": 65,
+      "label_size": 10,
+      "label_offset": 0.45,
+      "label_color": "#fb7185"
+    },
+    {
+      "id": "eggnog",
+      "type": "eggnog",
+      "r0": 0.34,
+      "r1": 0.4,
+      "label": "EggNOG (COG)",
+      "label_style": "radial",
+      "label_angle_deg": 75,
+      "label_size": 10,
+      "label_offset": 0.5,
+      "label_color": "#06b6d4",
+      "empty_color": "#f1f5f9"
+    }
+  ],
+  "contig_label_size": 12,
+  "contig_label_color": "#000000",
+  "contig_label_style": "tangent",
+  "contig_label_angle_deg": 0,
+  "contig_label_keep_upright": true,
+  "contig_label_max": 10,
+  "contig_label_min_len": 0,
+  "contig_label_enable": true,
+  "label_mode": "none",
+  "number_label_angle_deg": -25,
+  "number_label_angle_step": 6,
+  "number_line_length": 0.22,
+  "number_line_width": 2.5,
+  "number_circle_size": 260,
+  "_comment": "图例与色条布局配置（右侧区域），坐标均为fig相对坐标 [0-1]",
+  "legend": {
+    "_comment": "图注统一放到右侧，bbox为[x, y]，loc使用matplotlib的方位字符串",
+    "main": {
+      "_comment": "主图注（线/块）",
+      "loc": "upper right",
+      "bbox": [
+        1.28,
+        0.95
+      ],
+      "fontsize": 11,
+      "handlelength": 2.6,
+      "handleheight": 1.9,
+      "borderpad": 0.8,
+      "labelspacing": 0.7,
+      "markerscale": 1.6
+    },
+    "eggnog": {
+      "_comment": "COG 图注",
+      "loc": "upper right",
+      "bbox": [
+        1.28,
+        0.7
+      ],
+      "fontsize": 10,
+      "ncol": 2,
+      "handlelength": 2.6,
+      "handleheight": 1.9,
+      "borderpad": 0.8,
+      "labelspacing": 0.7
+    },
+    "splicing": {
+      "_comment": "可变剪切图注",
+      "loc": "upper right",
+      "bbox": [
+        1.28,
+        0.38
+      ],
+      "fontsize": 10,
+      "ncol": 2,
+      "handlelength": 2.6,
+      "handleheight": 1.9,
+      "borderpad": 0.8,
+      "labelspacing": 0.7
+    },
+    "labels": {
+      "_comment": "图例文字内容",
+      "gc": "GC content",
+      "gene": "Gene density",
+      "repeat": "Repeat density",
+      "bgc": "BGC",
+      "expression": ""
+    },
+    "text_color": "#8b5a2b",
+    "fontweight": "bold",
+    "eggnog_prefix": "COG:",
+    "splicing_prefix": "AS: "
+  },
+  "expression_colorbar": {
+    "_comment": "表达热图色条（放在COG图注上方），pos=[left,bottom,width,height]",
+    "pos": [
+      1.1,
+      0.75,
+      0.14,
+      0.035
+    ],
+    "label": "Expression (heatmap)",
+    "fontsize": 9,
+    "ticksize": 8,
+    "show": false
+  },
+  "_comment_image": "图片整体布局参数：figsize为英寸；dpi为分辨率；bbox_inches用于裁剪空白",
+  "image": {
+    "_comment": "图片尺寸与导出设置",
+    "figsize": [
+      15,
+      15
+    ],
+    "dpi": 300,
+    "bbox_inches": "tight",
+    "_comment_auto": "auto_size为true时，根据表达条件数与外圈扩展自动放大图片",
+    "auto_size": true,
+    "base_figsize": [
+      15,
+      15
+    ],
+    "expr_baseline": 3,
+    "expr_size_step": 0.6
+  },
+  "_comment_contig_label": "染色体/contig 标签设置（等同circos的label_parallel/label_radius/label_size）",
+  "_comment_expr_splice": "表达谱/可变剪切轨道自动布局：表达轨道数=表达条件数，轨道宽度固定；超过时自动把外圈扩展而不是压缩内圈",
+  "auto_expr_splice": true,
+  "expression_track_width": 0.04,
+  "splicing_width": 0.06,
+  "expr_gap": 0.02
+}
